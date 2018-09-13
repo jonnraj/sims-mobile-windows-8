@@ -1,4 +1,4 @@
-﻿/* global*/
+﻿/* global code*/ 
 var text;
 var icon;
 var s;
