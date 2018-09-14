@@ -1,4 +1,4 @@
-/* global code */
+/* global */
 var mapPath;
 var emptyTilePath;
 var AppMode;
