@@ -391,10 +391,16 @@
     <Content Include="AppPackages\CordovaApp.Windows_1.3108.2018.1_x86_Test\wix\x86\burn.exe" />
     <Content Include="AppPackages\ESFA.Windows8_1.3108.2018.1_x86_x64.zip" />
     <Content Include="AppPackages\ESFA.Windows8_1.3108.2018.1_x86_x64_0.zip" />
+    <Content Include="bower.json" />
+    <Content Include="build.json" />
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Content Include="merges\windows\scripts\platformOverrides.js" />
     <Content Include="merges\windows\scripts\winstore-jscompat.js" />
+    <Content Include="package.json" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
     <Content Include="res\icons\android\icon-48-mdpi.png" />
     <Content Include="res\icons\android\icon-72-hdpi.png" />
@@ -453,6 +459,7 @@
     <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
     <Content Include="res\screens\windows\SplashScreenPhone.scale-240.png" />
     <Content Include="res\screens\wp8\SplashScreenImage.png" />
+    <Content Include="taco.json" />
     <Content Include="www\assets\visguide.pdf" />
     <Content Include="www\atachment.html" />
     <Content Include="www\botsample.html" />
@@ -499,7 +506,6 @@
     <Content Include="www\css\index.css" />
     <Content Include="www\css\jquery-ui.css" />
     <Content Include="www\css\jquery.dataTables.min.css" />
-    <Content Include="www\css\SHMOStyles.css" />
     <Content Include="www\data\observations2.json" />
     <Content Include="www\data\settings.json" />
     <Content Include="www\entobox.html" />
@@ -510,7 +516,6 @@
     <Content Include="www\images\icon-96-xhdpi.png" />
     <Content Include="www\images\plant.png" />
     <Content Include="www\index.html" />
-    <Content Include="www\mapapi.js" />
     <Content Include="www\mapfiles\api-3\8\2\common.js" />
     <Content Include="www\mapfiles\api-3\8\2\common2.js" />
     <Content Include="www\mapfiles\api-3\8\2\controls.js" />
@@ -747,8 +752,6 @@
     <Content Include="www\scripts\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="www\scripts\wicket\wicket-gmap3.js" />
     <Content Include="www\scripts\wicket\wicket.js" />
-    <Content Include="www\scripts\_init.js" />
-    <Content Include="www\settings.html" />
   </ItemGroup>
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Android">

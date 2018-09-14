@@ -1,7 +1,12 @@
 var jsLocation="";
 try{var js=document.getElementsByTagName("script");jsLocation=js[js.length-1].src.substring(0,js[js.length-1].src.lastIndexOf("/")+1);}catch(e){}
 window.google=window.google||{};google.maps=google.maps||{};
-(function(){function getScript(src){document.write('<'+'script src="'+src+'"'+' type="text/javascript"><'+'/script>');}
+(function () {
+    function getScript(src) {
+        MSApp.execUnsafeLocalFunction(function () {
+            document.write('<' + 'script src="' + src + '"' + ' type="text/javascript"><' + '/script>');
+        });
+    }
 var modules = google.maps.modules = {};
 google.maps.__gjsload__ = function(name, text){modules[name] = text;};
 google.maps.Load = function(apiLoad){delete google.maps.Load;

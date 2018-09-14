@@ -351,7 +351,7 @@ function initSettings() {
                                         }
                                         infoWindow = new google.maps.InfoWindow({
                                             content: '<div id="content"><h4>Observation ' + this.title + '</h4><div id="bodyContent">' +
-                                            '<i class="fa fa-pencil fa-2x text-info" onclick="launchModal(' + curIdx + ',' + curD + ')"></i><label class="text-info">Edit</label></div></div>'
+                                            '<i class="fa fa-pencil fa-2x text-info infowindow_link" data-idx="' + curIdx + '" data-D="' + curD + '"></i><label class="text-info">Edit</label></div></div>'
                                         });
                                         infoWindow.setPosition(this.position);
                                         infoWindow.open(map);
@@ -442,7 +442,7 @@ function loadMapMarkers() {
                         }
                         infoWindow = new google.maps.InfoWindow({
                             content: '<div id="content"><h4>Observation ' + this.title + '</h4><div id="bodyContent">' +
-                            '<i class="fa fa-pencil fa-2x text-info" onclick="launchModal(' + curIdx + ',' + curD + ')"></i><label class="text-info">Edit</label></div></div>'
+                            '<i class="fa fa-pencil fa-2x text-info infowindow_link" data-idx="' + curIdx + '" data-d=' + curD + '></i><label class="text-info">Edit</label></div></div>'
                         });
                         infoWindow.setPosition(this.position);
                         infoWindow.open(map);
@@ -1556,7 +1556,7 @@ $(document).on('click', 'a.btnResetData', function (e) {
                                 }
                                 infoWindow = new google.maps.InfoWindow({
                                     content: '<div id="content"><h4>Observation ' + this.title + '</h4><div id="bodyContent">' +
-                                    '<i class="fa fa-pencil fa-2x text-info" onclick="launchModal(' + curIdx + ',' + curD + ')"></i><label class="text-info">Edit</label></div></div>'
+                                    '<i class="fa fa-pencil fa-2x text-info infowindow_link" data-idx="' + curIdx + '" data-D="' + curD + '"></i><label class="text-info">Edit</label></div></div>'
                                 });
                                 infoWindow.setPosition(this.position);
                                 infoWindow.open(map);
@@ -1811,3 +1811,8 @@ function sortObject(o) {
     }
     return sorted;
 }
+$(document).on('click', '.infowindow_link', function (e) {
+    var x = $(this).data('idx');
+    var y = $(this).data('d');
+    launchModal(x, y);
+});

@@ -3,16 +3,16 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    /*font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;*/
     -webkit-font-smoothing: antialiased;
 }
 
-/*body {
-    font: normal 16px/20px "Helvetica Neue", Helvetica, sans-serif;
-    background: rgb(237, 237, 236);
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    /*background: rgb(237, 237, 236);*/
     margin: 0;
     padding: 0;
-}*/
+}
 
 .main {
     position: relative;
